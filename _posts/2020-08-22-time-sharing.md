@@ -5,27 +5,34 @@ date:  2020-08-22
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>
-MathJax = {
-  startup: {
-    ready: function() {
-      var HTMLDomStrings = MathJax._.handlers.html.HTMLDomStrings.HTMLDomStrings;
-      var handleTag = HTMLDomStrings.prototype.handleTag;
-      HTMLDomStrings.prototype.handleTag = function (node, ignore) {
-        if (this.adaptor.kind(node) === '#comment') {
-          var text = this.adaptor.textContent(node);
-          if (text.match(/^\[CDATA\[(?:\n|.)*\]\]$/)) {
-            this.string += '<!'
-            this.extendString(node, text);
-            this.string += '>';
-            return this.adaptor.next(node);
-          }
+document.addEventListener('DOMContentLoaded', function(){
+  function stripcdata(x) {
+    if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
+      return x.substring(11,x.length-4);
+    return x;
+  }
+  document.querySelectorAll("script[type='math/tex']").forEach(function(el){
+    el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
+  });
+  document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
+    el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
+  });
+}, false);
+window.MathJax = {
+  options: {
+    renderActions: {
+      findScript: [9, function (doc) {
+        for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+          const display = !!node.type.match(/; *mode=display/);
+          const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+          const text = document.createTextNode('');
+          node.parentNode.replaceChild(text, node);
+          math.start = {node: text, delim: '', n: 0};
+          math.end = {node: text, delim: '', n: 0};
+          doc.math.push(math);
         }
-        return handleTag.call(this, node, ignore);
-      }
-      MathJax.startup.defaultReady();
-      MathJax.startup.document.inputJax[0].preFilters.add(function (data) {
-        data.math.math = data.math.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
-      });
+        doc.findMath();
+      }, '']
     }
   }
 };
