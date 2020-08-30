@@ -4,7 +4,7 @@ title:  "On The Origin of Time-Sharing Computers, Round-Robin Algorithms, and Cl
 date:  2020-08-22
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/1024px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg" frameborder="0"><p><a href="https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg">The Fighting Temeraire, JMW Turner, National Gallery</a></p></div>
 
