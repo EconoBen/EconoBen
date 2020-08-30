@@ -3,6 +3,14 @@ layout: post
 title:  "On The Origin of Time-Sharing Computers, Round-Robin Algorithms, and Cloud Computing"
 date:  2020-08-22
 ---
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
+  MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
+    data.math = data.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
+  });
+});
+</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
@@ -242,7 +250,7 @@ if __name__ == "__main__":
 
 For programmers who wanted their programs running as soon as possible, the usefulness of the Round-Robin scheduler can be seen in the response time chart above. Just as before, the x-axis represents the measure of different periods of time programs are run for before being paused and re-queued. The y-axis, however, now represents the average response time $$\bar{r_t}$$ of all programs: where average response time is the difference between when a program is entered into the queue $$p_q$$ and when it first begins to run $$p_r$$. Together, the variables form the equation below:
 
-$$\bar{r}_{t} = \frac{\sum_{i=1}^{n} p_t^{i} - p_q^{i}}{n}$$
+$$ \bar{r}_{t} = \frac{\sum_{i=1}^{n} p_t^{i} - p_q^{i}}{n} $$
 
 Notably, programs initially placed at the end of the queue will by definition have longer response times than those initially placed at the front of the queue if these programs are submitted at the same time. So, even if two progams are comparatively similar, their response times may differ. Not only that, but by using the Round-Robin algorithm with shorter time slices, submitted programs would be iterated over more frequently, as seen in the first chart. Despite this increase, time-sharing still allowed for a lower average response time for submitted programs compared to their pre-time-sharing alternatives, as seen in the second chart. Said another way, the difference between the exponential rise in average response times to the far-right of chart and the low response times to the far-left illustrates the significance of time-sharing before and after its invention.
 
