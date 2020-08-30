@@ -3,15 +3,33 @@ layout: post
 title:  "On The Origin of Time-Sharing Computers, Round-Robin Algorithms, and Cloud Computing"
 date:  2020-08-22
 ---
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
-  MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
-    data.math = data.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
-  });
-});
-</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  startup: {
+    ready: function() {
+      var HTMLDomStrings = MathJax._.handlers.html.HTMLDomStrings.HTMLDomStrings;
+      var handleTag = HTMLDomStrings.prototype.handleTag;
+      HTMLDomStrings.prototype.handleTag = function (node, ignore) {
+        if (this.adaptor.kind(node) === '#comment') {
+          var text = this.adaptor.textContent(node);
+          if (text.match(/^\[CDATA\[(?:\n|.)*\]\]$/)) {
+            this.string += '<!'
+            this.extendString(node, text);
+            this.string += '>';
+            return this.adaptor.next(node);
+          }
+        }
+        return handleTag.call(this, node, ignore);
+      }
+      MathJax.startup.defaultReady();
+      MathJax.startup.document.inputJax[0].preFilters.add(function (data) {
+        data.math.math = data.math.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
+      });
+    }
+  }
+};
+</script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/1024px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg" frameborder="0"><p><a href="https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg">The Fighting Temeraire, JMW Turner, National Gallery</a></p></div>
