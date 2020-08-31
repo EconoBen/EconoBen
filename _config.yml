@@ -21,7 +21,7 @@
 title:  Reinforcement Learning 
 email:  benjaminlabaschin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about what I'm working on, and what wonderful things I'm learning about.
+  A blog about the intersection of computer science, economics, and history.
 baseurl:  "" # the subpath of your site, e.g. /blog
 url:  "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:  EconoBen
