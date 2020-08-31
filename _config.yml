@@ -31,10 +31,8 @@ github_username:  EconoBen
 theme:  minima
 plugins:
   - jekyll-feed
-  - jekyll-latex
 
-
-markdown: CommonMarkGhPages
+markdown: kramdown
 
 
 # Exclude from processing.
