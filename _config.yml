@@ -28,11 +28,18 @@ twitter_username:  EconoBen
 github_username:  EconoBen
 
 # Build settings
-theme:  minima
-plugins:
-  - jekyll-feed
-
+publish: True
 markdown: kramdown
+theme:  minima
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins: 
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 
 # Exclude from processing.
