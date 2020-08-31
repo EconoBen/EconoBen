@@ -2,6 +2,8 @@
 layout: post
 title:  "On The Origin of Time-Sharing Computers, Round-Robin Algorithms, and Cloud Computing"
 date:  2020-08-31
+mathjax: true
+kramdown: true
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" async
