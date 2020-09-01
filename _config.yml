@@ -40,6 +40,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+navbar-links:
+  Author's home: "https://www.benjaminlabaschin.com"
 
 
 # Exclude from processing.
