@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Master-Slave Language in GitHub, Technology, and History"
+title:  "On Master-Slave Terminology in GitHub, Technology, and Science"
 date:  2020-10-20
 mathjax: true
 kramdown: true
