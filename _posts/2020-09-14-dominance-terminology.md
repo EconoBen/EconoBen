@@ -28,7 +28,7 @@ _[Nature] is either free and follows her ordinary course of development as in th
           <li style=" display:inline">Shakespeare</li>
           <li style=" display:inline">Sir Francis Bacon</li>
           <li style=" display:inline">Descartes</li>
-          <li style=" display:inline">_scala naturae_</li>
+          <li style=" display:inline">scala naturae</li>
           <li style=" display:inline">anthropometry and phrenology</li>
           <li style=" display:inline">Social Darwinism</li>
       </ul>
