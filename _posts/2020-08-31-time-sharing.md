@@ -7,7 +7,36 @@ kramdown: true
 ---
 <div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/1024px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg" frameborder="0"><p><a href="https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg">The Fighting Temeraire, JMW Turner, National Gallery</a></p></div>
 
-Recently I began writing a post on ways to automate python scripts passively.[^1] For the purpose of the post I chose cron, an operating system utility that is run as a daemon—a program that runs passively in the background of a computer. If cron and daemon both seem etymologically Greek to you, they did to me as well. Researching whether this was true (it probably is) led me down an interdisciplinary rabbit-hole of computer science history and its relationship to philosophy and economics. This first post is an extended history on origin of time-sharing computers, which I couldn't stop researching. In future a post, I plan on writing more about the economics of cloud computing. Eventually the article ends with the etymology of the term daemon and its meaning both in and outside of computer science.
+**Keywords/Topics:**
+<html>
+    <head>
+        <style type="text/css">
+            ul { display:inline-block; padding:0; text-align:center }
+            li a { white-space:nowrap }
+            li:after { content:" "; letter-spacing:1em; background:center center no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMkMEa+wAAAAnSURBVBhXY/Dz89MA4sNA/B9Ka4AEYQIwfBgkiCwAxjhVopnppwEApxQqhnyQ+VkAAAAASUVORK5CYII=); }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li style=" display:inline">ARPA</li>
+            <li style=" display:inline">Project Mac</li>
+            <li style=" display:inline" >Robert Fano</li>
+            <li style=" display:inline">Fernando Corbató</li>
+            <li style=" display:inline">Time-Sharing</li>
+            <li style=" display:inline">Project SAGE</li>
+            <li style=" display:inline">Batch-Processing</li>
+            <li style=" display:inline">Multiprogramming</li>
+            <li style=" display:inline">Round-Robin Algorithm</li>
+            <li style=" display:inline">William Nordhaus</li>
+            <li style=" display:inline">Cloud Computing</li>
+        </ul>
+
+   </body>
+</html>
+
+# Introduction
+
+Recently I began writing a post on ways to automate python scripts passively.[^1] For the purpose of the post I chose cron, an operating system utility that is run as a daemon—a program that runs passively in the background of a computer. If cron and daemon both seem etymologically Greek to you, they did to me as well. While researching whether this was true (it probably is), I fell down an interdisciplinary rabbit-hole of computer science history. What I discovered and have since written about below is a more complete history than I've been able to find about time-sharing computing and the function of the round-robin algorithm. In future a post, I plan on writing more about the economics of cloud computing.
 
 # Early Innovations
 
