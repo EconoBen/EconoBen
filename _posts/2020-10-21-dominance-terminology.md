@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On Dominance Terminology: Tracing the History of Master-Slave From GitHub to Sir Francis Bacon"
-date:  2020-10-21
+date:  2020-10-20
 mathjax: true
 kramdown: true
 ---
