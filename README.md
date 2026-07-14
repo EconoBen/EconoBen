@@ -40,20 +40,25 @@ I am also the **O'Reilly author on AI agents and agent memory**, an AEA-publishe
 - **[langgraph-redis-workshop](https://github.com/EconoBen/langgraph-redis-workshop)** — building stateful AI agents with LangGraph and Redis (ODSC West 2025)
 - **[what_are_ai_agents](https://github.com/EconoBen/what_are_ai_agents)** — companion code for my O'Reilly report on AI agents
 - **[opt_and_sim_with_llms](https://github.com/EconoBen/opt_and_sim_with_llms)** — LLM optimization and simulation, guest lecture at the Wharton School
-- **[claude-environment](https://github.com/EconoBen/claude-environment)** — a reproducible toolkit for an AI-assisted development environment
 
-### ✍️ Writing &amp; talks
+### ✍️ Writing
 
-- **Agent Memory**, O'Reilly (in progress)
-- **Managing Memory for AI Agents**, O'Reilly (2025)
-- **What Are AI Agents?**, O'Reilly (2023)
-- **Extending "GPTs Are GPTs" to Firms**, AEA Papers and Proceedings (2025)
+- **[Agent Memory](https://econoben.dev/book)** — O'Reilly book, in progress
+- **[Managing Memory for AI Agents](https://www.oreilly.com/library/view/managing-memory-for/9798341661257/)** — O'Reilly report (2025)
+- **[What Are AI Agents?](https://www.oreilly.com/library/view/what-are-ai/9781098159726/)** — O'Reilly report (2023)
+- **[Extending "GPTs Are GPTs" to Firms](https://www.aeaweb.org/articles?id=10.1257/pandp.20251045)** — AEA Papers and Proceedings (2025)
 
-<details>
-<summary>📊 GitHub stats</summary>
-<br>
-<img height="160" alt="Ben's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=EconoBen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EconoBen&layout=compact&hide_border=true&langs_count=8" />
-</details>
+More at [econoben.dev/publications](https://econoben.dev/publications)
+
+### 🎤 Talks
+
+- **[The Evolution of AI Agents](https://open.spotify.com/episode/2IcWcUKJRdjaXsLKh2J4ca)** — Into the Hopper Podcast (2026)
+- **[Building Stateful AI Agents with LangGraph and Redis](https://www.youtube.com/watch?v=Kbd0ybX-knU)** — ODSC West (2025)
+- **[AI Needs Memory: Here's How It Works](https://www.youtube.com/watch?v=IfNhL71jqYs)** — MLOps Community (2025)
+- **[Building With AI: Quick POCs with LLMs](https://www.youtube.com/watch?v=SnvaIFlZ3gI)** — Wharton Guest Lecture (2024)
+- **[A Normie Approach to Validating LLM Outputs](https://www.youtube.com/watch?v=xbXEE7pqwMI)** — AI.Science (2023)
+- **[Building an HTTPS Model API for Cheap](https://www.youtube.com/watch?v=DRGxjfLVrTA)** — NormConf (2022)
+
+More at [econoben.dev/talks](https://econoben.dev/talks)
 
 <p align="center"><i>Turning hard systems into clear ideas.</i></p>
